@@ -1,6 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: "export",
+  sassOptions: {
+    additionalData: `@import "common/assets/css/abstracts/variables.scss";`,
+  },
   trailingSlash: true,
   webpack(config) {
     config.module.rules.push({

@@ -1,0 +1,62 @@
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 0;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+
+  &__wrapper {
+    width: 100%;
+    border-bottom: 2px solid $dfi-green-100;
+    box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.1);
+  }
+
+  .logo {
+    display: flex;
+    align-items: baseline;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 600;
+    color: $dfi-gray-1000;
+
+    span {
+      font-weight: 800;
+      color: $dfi-green-100;
+    }
+  }
+
+  .main-menu,
+  .user-menu {
+    &__button {
+      display: flex;
+      align-items: center;
+      height: 44px;
+      padding: 0 12px;
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
+
+  .main-menu {
+    display: flex;
+    align-items: center;
+
+    & > * + * {
+      margin-left: 8px;
+    }
+
+    &__button {
+      display: flex;
+      align-items: center;
+      height: 44px;
+      padding: 0 12px;
+    }
+  }
+
+  .user-menu {
+    display: flex;
+    align-items: center;
+  }
+}
